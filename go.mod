@@ -1,4 +1,4 @@
-module coda-cli
+module coda
 
 go 1.20
 
