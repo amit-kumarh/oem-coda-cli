@@ -54,6 +54,9 @@ func viewTasks(codaClient *coda.Client, assignee string) {
 	defer w.Flush()
 	fmt.Fprint(w, "Name\tStatus\tAssignee\tPriority\tType\n")
 	for _, row := range rows.Rows {
+		if row.Values[COL_IDS["status"]] == "Done" {
+			continue
+		}
 		data := row.Values
 		fmt.Fprintf(w, "%s\t%s\t%s\t%s\t%s\n", data[COL_IDS["name"]], data[COL_IDS["status"]], data[COL_IDS["assignee"]], data[COL_IDS["priority"]], data[COL_IDS["type"]])
 	}
