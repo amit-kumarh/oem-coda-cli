@@ -17,4 +17,5 @@ Commands:
     - `-p` or `--priority`: Task priority (P0, P1, P2, P3). Default is P2
     - `-s` or `--priority`: Task Status (Not started, In progress, Finished, Blocked). Default is Not started
     - `-t` or `--type`: Task type (Hardware, Firmware, Administrative, or Other). Default is Other
+    - The terminal will then prompt you for the task name
 - `coda help` displays a short help message
