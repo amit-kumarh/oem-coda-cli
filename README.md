@@ -9,7 +9,7 @@ CLI built with Go to interface with Olin Electric Motorsports ELeads 23-24 task 
 
 ## User guide
 Commands:
-- `coda list` lists tasks that are currently on the table
+- `coda list` lists open tasks that are on the table
     - If you just run `coda list`, it will show your tasks
     - If you run `coda list --all`, it will show all tasks in the table
     - if you run `coda list "<full name of person>"`, it will show tasks for that person  `
