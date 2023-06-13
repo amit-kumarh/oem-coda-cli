@@ -119,8 +119,16 @@ func main() {
 		fmt.Printf("%q is not valid command. Run 'coda help' for usage\n", os.Args[1])
 	}
 
+	// build file path to credentials
+	homeDir, err := os.UserHomeDir()
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+	credPath := homeDir + "/.coda_api_key"
+
 	// read API key from file
-	file, err := os.Open("api_key")
+	file, err := os.Open(credPath)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
