@@ -19,3 +19,9 @@ Commands:
     - `-t` or `--type`: Task type (Hardware, Firmware, Administrative, or Other). Default is Other
     - The terminal will then prompt you for the task name
 - `coda help` displays a short help message
+
+## Todo
+Biggest thing is that's missing is the ability to edit a row to update a task's status, that code is a little more in-depth since now the user has to select a row out of the task table. However, adding that is not a huge priority for me right now (as of 6/23), as I don't see this replacing actually going onto Coda and managing tasks, but rather just a quick way to do simple tasks like check what's been assigned to me, or quickly assign a task before I forget about it.
+
+## Contributing
+If you want to contribute, feel free to send in a PR! I'll review it when I can.
